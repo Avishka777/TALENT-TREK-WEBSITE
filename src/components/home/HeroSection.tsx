@@ -19,7 +19,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 md:px-6 relative z-10 text-white text-center max-w-7xl">
         <div className="max-w-5xl mx-auto">
           {/* Main Title */}
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight tracking-tight">
+          <h1 className="text-6xl md:text-7xl lg:text-8xl mt-32 md:mt-20 font-bold mb-6 leading-tight tracking-tight">
             TALENT TREK
           </h1>
 
@@ -56,11 +56,11 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="w-8 h-12 border-3 border-white rounded-lg flex justify-center">
           <div className="w-1.5 h-4 bg-white rounded-lg mt-3"></div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
