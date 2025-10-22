@@ -26,7 +26,7 @@ const ObjectivesSection = () => {
 
   return (
     <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6  max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Research Objectives</h2>
           <div className="h-1.5 w-32 bg-cyan-600 mx-auto rounded-full mb-6"></div>
@@ -40,7 +40,7 @@ const ObjectivesSection = () => {
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">Main Objective</h3>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed text-center">
-              Develop a Computational Framework for Optimized Recruitment via Algorithmic 
+              Develop a Computational Framework for Optimized Recruitment via Algorithmic
               Skill Profiling to enhance the efficiency and accuracy of IT hiring processes.
             </p>
           </div>
@@ -49,7 +49,7 @@ const ObjectivesSection = () => {
         {/* Specific Objectives Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {objectives.map((objective, index) => (
-            <div 
+            <div
               key={index}
               className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 group"
             >

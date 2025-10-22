@@ -2,21 +2,36 @@
 
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import logo from '../../assets/public/logo.png'; 
+import { useRouter, usePathname } from 'next/navigation';
+import logo from '../../assets/public/logo.png';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'Research', href: '#research' },
-    { name: 'Objectives', href: '#objectives' },
-    { name: 'Team', href: '#team' },
-    { name: 'Domain', href: '#domain' },
-    { name: 'Milestones', href: '#milestones' },
-    { name: 'Documents', href: '#documents' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/' },
+    { name: 'Domain', href: '/domain' },
+    { name: 'Methodology', href: '/methodology' },
+    { name: 'Milestones', href: '/milestones' },
+    { name: 'Documents', href: '/documents' },
+    { name: 'Objectives', href: '/objectives' },
+    { name: 'Team', href: '/team' },
+    { name: 'Contact', href: '/contact' },
   ];
+
+  const isActiveLink = (href: string) => {
+    if (href === '/') {
+      return pathname === '/';
+    }
+    return pathname.startsWith(href);
+  };
+
+  const handleNavigation = (href: string) => {
+    router.push(href);
+    setIsOpen(false);
+  };
 
   return (
     <nav className="bg-white shadow-md fixed w-full top-0 z-50 border-b border-gray-200">
@@ -26,9 +41,9 @@ export default function Navigation() {
           <div className="flex items-center">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 flex items-center justify-center">
-                <img 
-                  src={logo.src} 
-                  alt="Talent Trek Logo" 
+                <img
+                  src={logo.src}
+                  alt="Talent Trek Logo"
                   className="h-8 w-auto"
                 />
               </div>
@@ -37,17 +52,20 @@ export default function Navigation() {
               </div>
             </div>
           </div>
-          
+
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-1">
             {navItems.map((item) => (
-              <a
+              <button
                 key={item.name}
-                href={item.href}
-                className="text-gray-700 hover:text-cyan-600 hover:bg-gray-50 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300"
+                onClick={() => handleNavigation(item.href)}
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${isActiveLink(item.href)
+                    ? 'text-cyan-600 bg-cyan-50 font-semibold'
+                    : 'text-gray-700 hover:text-cyan-600 hover:bg-gray-50'
+                  }`}
               >
                 {item.name}
-              </a>
+              </button>
             ))}
           </div>
 
@@ -67,14 +85,16 @@ export default function Navigation() {
           <div className="md:hidden bg-white border-t border-gray-200 shadow-lg">
             <div className="px-2 pt-2 pb-4 space-y-1">
               {navItems.map((item) => (
-                <a
+                <button
                   key={item.name}
-                  href={item.href}
-                  className="text-gray-700 hover:text-cyan-600 hover:bg-gray-50 block px-3 py-3 rounded-lg text-base font-medium transition-colors duration-300 border-b border-gray-100 last:border-b-0"
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => handleNavigation(item.href)}
+                  className={`w-full text-left block px-3 py-3 rounded-lg text-base font-medium transition-colors duration-300 border-b border-gray-100 last:border-b-0 ${isActiveLink(item.href)
+                      ? 'text-cyan-600 bg-cyan-50 font-semibold'
+                      : 'text-gray-700 hover:text-cyan-600 hover:bg-gray-50'
+                    }`}
                 >
                   {item.name}
-                </a>
+                </button>
               ))}
             </div>
           </div>

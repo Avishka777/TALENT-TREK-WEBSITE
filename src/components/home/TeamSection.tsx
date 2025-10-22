@@ -33,7 +33,7 @@ const teamMembers = [
     role: 'Platform Architect',
     photo: avishka,
     function: 'AI-Driven Platform for Recruitment and Job Alignment',
-    email: 'arsar@email.com'
+    email: 'it2183816@my.sliit.lk'
   },
   {
     name: 'ABEYSINGHA A.D.L',
@@ -46,7 +46,7 @@ const teamMembers = [
     name: 'FERNANDO T.P.R',
     role: 'Interview System Engineer',
     photo: pasan,
-    function: 'AUTOMATED SYSTEM FOR INTERVIEWS',
+    function: 'Automated System for Interviews',
     email: 'tprf@email.com'
   }
 ];
@@ -54,7 +54,7 @@ const teamMembers = [
 const TeamSection = () => {
   return (
     <section id="team" className="py-20 bg-white">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6  max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Research Team</h2>
           <div className="h-1.5 w-32 bg-cyan-600 mx-auto rounded-full mb-6"></div>
@@ -71,14 +71,14 @@ const TeamSection = () => {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {teamMembers.slice(0, 2).map((supervisor, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="bg-gray-50 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-200"
               >
                 <div className="p-8 text-center">
                   <div className="w-52 h-52 mx-auto mb-6 rounded-lg overflow-hidden border-4 border-white shadow-md">
-                    <Image 
-                      src={supervisor.photo} 
+                    <Image
+                      src={supervisor.photo}
                       alt={supervisor.name}
                       className="w-full h-full object-cover"
                     />
@@ -100,14 +100,14 @@ const TeamSection = () => {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {teamMembers.slice(2).map((member, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="bg-gray-50 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-200 group"
               >
                 <div className="p-6 text-center">
                   <div className="w-48 h-48 mx-auto mb-4 rounded-lg overflow-hidden border-4 border-white shadow-md group-hover:border-cyan-200 transition-colors">
-                    <Image 
-                      src={member.photo} 
+                    <Image
+                      src={member.photo}
                       alt={member.name}
                       className="w-full h-full object-cover"
                     />
@@ -130,9 +130,9 @@ const TeamSection = () => {
           <div className="text-center max-w-4xl mx-auto">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">Integrated Research Framework</h3>
             <p className="text-lg text-cyan-100 leading-relaxed">
-              All individual functions combine to create a comprehensive AI-powered recruitment 
-              framework that revolutionizes the hiring process for both job seekers and employers. 
-              Our integrated system leverages cutting-edge technologies to provide seamless, 
+              All individual functions combine to create a comprehensive AI-powered recruitment
+              framework that revolutionizes the hiring process for both job seekers and employers.
+              Our integrated system leverages cutting-edge technologies to provide seamless,
               efficient, and accurate talent matching.
             </p>
           </div>
