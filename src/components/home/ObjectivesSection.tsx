@@ -3,9 +3,9 @@ import { Brain, Video, FileSearch, Target } from 'lucide-react';
 const ObjectivesSection = () => {
   const objectives = [
     {
-      icon: FileSearch,
-      title: "Resume Analyzer",
-      description: "Design and implement an AI-powered system to extract, score, and match candidate profiles with job requirements"
+      icon: Target,
+      title: "Job Matching Algorithms",
+      description: "Automate real-time, accurate job-candidate matching using sophisticated AI algorithms"
     },
     {
       icon: Brain,
@@ -18,10 +18,12 @@ const ObjectivesSection = () => {
       description: "Incorporate advanced video analysis to assess candidates' communication, confidence, and cultural fit"
     },
     {
-      icon: Target,
-      title: "Job Matching Algorithms",
-      description: "Automate real-time, accurate job-candidate matching using sophisticated AI algorithms"
-    }
+      icon: FileSearch,
+      title: "AI-Agent for Smart Job Search",
+      description: "Design and implement an AI Skill Forecaster Analyzes IT job postings to predict the top 5 most in-demand skills for the next 6 months."
+    },
+
+
   ];
 
   return (
@@ -57,7 +59,7 @@ const ObjectivesSection = () => {
                 <objective.icon size={28} />
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-gray-900">{objective.title}</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">{objective.description}</p>
+              <p className="text-gray-600 text-sm leading-relaxed text-justify">{objective.description}</p>
             </div>
           ))}
         </div>
