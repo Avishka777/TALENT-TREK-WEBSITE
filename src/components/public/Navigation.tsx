@@ -16,8 +16,6 @@ export default function Navigation() {
     { name: 'Methodology', href: '/methodology' },
     { name: 'Milestones', href: '/milestones' },
     { name: 'Documents', href: '/documents' },
-    { name: 'Objectives', href: '/objectives' },
-    { name: 'Team', href: '/team' },
     { name: 'Contact', href: '/contact' },
   ];
 
