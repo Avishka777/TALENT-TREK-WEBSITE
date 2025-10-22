@@ -1,73 +1,145 @@
-export default function TeamSection() {
-  const supervisors = [
-    { name: 'DR. PRASANNA SUMATHIPALA', role: 'Supervisor' },
-    { name: 'MS. KAUSHALYA RAJAPAKSE', role: 'Co-Supervisor' }
-  ];
+import { Mail, Award, Users } from 'lucide-react';
+import avishka from '../../assets/team/avishka.png';
+import dhananjaya from '../../assets/team/dhananjaya.png';
+import pasan from '../../assets/team/pasan.png';
+import dimesha from '../../assets/team/dimesha2.jpg';
+import user from '../../assets/team/user.png';
+import Image from 'next/image';
 
-  const teamMembers = [
-    { 
-      name: 'WIJERATHNA G.D.K', 
-      function: 'AI-Agent for Smart Job Search and Automation'
-    },
-    { 
-      name: 'RATHNAKUMARA A.R.S.A', 
-      function: 'AI-Driven Platform for Recruitment and Job Alignment'
-    },
-    { 
-      name: 'ABEYSINGHA A.D.L', 
-      function: 'AI-Driven, Skill-Based Assessment Framework for Technical Evaluation'
-    },
-    { 
-      name: 'FERNANDO T.P.R', 
-      function: 'AUTOMATED SYSTEM FOR INTERVIEWS'
-    }
-  ];
 
+// Team member data with photo URLs
+const teamMembers = [
+  {
+    name: 'DR. PRASANNA SUMATHIPALA',
+    role: 'Supervisor',
+    photo: user,
+    description: 'Research Supervisor guiding the project development and academic direction'
+  },
+  {
+    name: 'MS. KAUSHALYA RAJAPAKSE',
+    role: 'Co-Supervisor',
+    photo: user,
+    description: 'Co-Supervisor providing technical guidance and industry insights'
+  },
+  {
+    name: 'WIJERATHNA G.D.K',
+    role: 'AI Agent Developer',
+    photo: dimesha,
+    function: 'AI-Agent for Smart Job Search and Automation',
+    email: 'gdkw@email.com'
+  },
+  {
+    name: 'RATHNAKUMARA A.R.S.A',
+    role: 'Platform Architect',
+    photo: avishka,
+    function: 'AI-Driven Platform for Recruitment and Job Alignment',
+    email: 'arsar@email.com'
+  },
+  {
+    name: 'ABEYSINGHA A.D.L',
+    role: 'Assessment Specialist',
+    photo: dhananjaya,
+    function: 'AI-Driven, Skill-Based Assessment Framework for Technical Evaluation',
+    email: 'adla@email.com'
+  },
+  {
+    name: 'FERNANDO T.P.R',
+    role: 'Interview System Engineer',
+    photo: pasan,
+    function: 'AUTOMATED SYSTEM FOR INTERVIEWS',
+    email: 'tprf@email.com'
+  }
+];
+
+const TeamSection = () => {
   return (
-    <section id="team" className="py-16 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Team</h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
+    <section id="team" className="py-20 bg-white">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Research Team</h2>
+          <div className="h-1.5 w-32 bg-cyan-600 mx-auto rounded-full mb-6"></div>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Meet the dedicated team behind the TALENT TREK research project
+          </p>
         </div>
 
-        {/* Supervisors */}
-        <div className="mb-12">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-8 text-center">Supervisors</h3>
-          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-            {supervisors.map((supervisor, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-md text-center">
-                <h4 className="text-lg font-medium text-gray-900">{supervisor.name}</h4>
-                <p className="text-blue-600 mt-2">{supervisor.role}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Team Members */}
-        <div>
-          <h3 className="text-2xl font-semibold text-gray-800 mb-8 text-center">Team Members</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                <div className="text-center">
-                  <h4 className="text-lg font-medium text-gray-900 mb-3">{member.name}</h4>
-                  <p className="text-sm text-gray-600 leading-relaxed">{member.function}</p>
+        {/* Supervisors Section */}
+        <div className="mb-16">
+          <h3 className="text-3xl font-bold text-gray-800 mb-12 text-center flex items-center justify-center">
+            <Award className="mr-3 text-cyan-600" size={32} />
+            Supervisors
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {teamMembers.slice(0, 2).map((supervisor, index) => (
+              <div 
+                key={index} 
+                className="bg-gray-50 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-200"
+              >
+                <div className="p-8 text-center">
+                  <div className="w-52 h-52 mx-auto mb-6 rounded-lg overflow-hidden border-4 border-white shadow-md">
+                    <Image 
+                      src={supervisor.photo} 
+                      alt={supervisor.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">{supervisor.name}</h4>
+                  <p className="text-cyan-600 font-semibold mb-3">{supervisor.role}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">{supervisor.description}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Combined System */}
-        <div className="mt-12 bg-blue-600 text-white p-8 rounded-lg text-center">
-          <h3 className="text-2xl font-bold mb-4">Integrated System</h3>
-          <p className="text-lg opacity-90">
-            All individual functions combine to create a comprehensive AI-powered recruitment 
-            framework that revolutionizes the hiring process for both job seekers and employers.
-          </p>
+        {/* Team Members Section */}
+        <div>
+          <h3 className="text-3xl font-bold text-gray-800 mb-12 text-center flex items-center justify-center">
+            <Users className="mr-3 text-cyan-600" size={32} />
+            Team Members
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {teamMembers.slice(2).map((member, index) => (
+              <div 
+                key={index} 
+                className="bg-gray-50 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-200 group"
+              >
+                <div className="p-6 text-center">
+                  <div className="w-48 h-48 mx-auto mb-4 rounded-lg overflow-hidden border-4 border-white shadow-md group-hover:border-cyan-200 transition-colors">
+                    <Image 
+                      src={member.photo} 
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-2 leading-tight">{member.name}</h4>
+                  <p className="text-cyan-600 font-semibold text-sm mb-3">{member.role}</p>
+                  <p className="text-gray-600 text-xs mb-4 leading-relaxed">{member.function}</p>
+                  <div className="flex items-center justify-center text-cyan-600 hover:text-cyan-700 transition-colors">
+                    <Mail size={16} className="mr-1" />
+                    <span className="text-sm">{member.email}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Combined System Info */}
+        <div className="mt-16 bg-cyan-600 text-white p-8 rounded-2xl shadow-xl">
+          <div className="text-center max-w-4xl mx-auto">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">Integrated Research Framework</h3>
+            <p className="text-lg text-cyan-100 leading-relaxed">
+              All individual functions combine to create a comprehensive AI-powered recruitment 
+              framework that revolutionizes the hiring process for both job seekers and employers. 
+              Our integrated system leverages cutting-edge technologies to provide seamless, 
+              efficient, and accurate talent matching.
+            </p>
+          </div>
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default TeamSection;

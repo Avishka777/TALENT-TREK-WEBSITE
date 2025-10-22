@@ -1,22 +1,68 @@
-export default function HeroSection() {
+import { ArrowRight } from 'lucide-react';
+
+const HeroSection = () => {
   return (
-    <section id="home" className="pt-16 bg-gradient-to-br from-blue-50 to-indigo-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div 
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: 'url(https://images.pexels.com/photos/7661596/pexels-photo-7661596.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          filter: 'brightness(0.7)'
+        }}
+      ></div>
+      <div className="absolute inset-0 bg-gray-900 opacity-80"></div>
+      
+      {/* Main Content */}
+      <div className="container mx-auto px-4 md:px-6 relative z-10 text-white text-center">
+        <div className="max-w-5xl mx-auto">
+          {/* Main Title */}
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight tracking-tight">
             TALENT TREK
           </h1>
-          <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
-            Computational Framework for Optimized Recruitment via Algorithmic Skill Profiling
+          
+          {/* Subtitle */}
+          <p className="text-2xl md:text-3xl lg:text-4xl font-light mb-6 text-gray-200 leading-relaxed">
+            Computational Framework for Optimized Recruitment
           </p>
-          <div className="bg-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto">
-            <p className="text-lg text-gray-600 leading-relaxed">
-              A streamlined, user-friendly platform that enhances IT hiring by efficiently matching 
-              skilled professionals with suitable opportunities through innovative AI-powered tools.
-            </p>
+          <p className="text-xl md:text-2xl font-light mb-4 text-gray-300">
+            via Algorithmic Skill Profiling
+          </p>
+          
+          {/* Description */}
+          <p className="text-lg md:text-xl mb-12 text-gray-200 max-w-4xl mx-auto leading-relaxed mt-8">
+            Revolutionizing IT hiring through AI-powered resume analysis, skill-based assessments, 
+            and intelligent job matching to bridge the gap between talented professionals and dream opportunities.
+          </p>
+          
+          {/* CTA Buttons */}
+          <div className="flex flex-wrap gap-6 justify-center mt-12">
+            <a 
+              href="#research"
+              className="bg-cyan-600 hover:bg-cyan-700 text-white px-10 py-4 rounded-xl transition-all duration-300 flex items-center font-semibold text-lg shadow-2xl hover:shadow-3xl transform hover:scale-105"
+            >
+              Explore Research <ArrowRight size={22} className="ml-3" />
+            </a>
+            <a 
+              href="#team"
+              className="bg-white text-gray-900 hover:bg-gray-100 px-10 py-4 rounded-xl transition-all duration-300 font-semibold text-lg border-2 border-white shadow-2xl hover:shadow-3xl transform hover:scale-105"
+            >
+              Meet Our Team
+            </a>
           </div>
+        </div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="w-8 h-12 border-3 border-white rounded-full flex justify-center">
+          <div className="w-1.5 h-4 bg-white rounded-full mt-3"></div>
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default HeroSection;
