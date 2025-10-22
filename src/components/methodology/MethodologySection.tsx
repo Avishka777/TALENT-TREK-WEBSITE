@@ -16,7 +16,7 @@ const MethodologySection = () => {
           {/* System Architecture Overview */}
           <div className="mb-16">
             <SectionTitle title="System Architecture Overview" />
-            <div className="bg-gray-50 p-8 rounded-2xl border border-gray-200">
+            <div className="bg-gray-50 p-8 rounded-lg border border-gray-200">
               <div className="aspect-w-16 aspect-h-9 bg-white rounded-lg mb-6 p-8 border border-gray-300">
                 <div className="flex items-center justify-center h-full text-gray-500">
                   <div className="text-center">
@@ -45,7 +45,7 @@ const MethodologySection = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
                 <div className="flex items-center mb-4">
                   <FileSearch className="text-cyan-600 mr-3" size={24} />
                   <h4 className="font-bold text-gray-900">Document Processing</h4>
@@ -58,7 +58,7 @@ const MethodologySection = () => {
                 </ul>
               </div>
               
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
                 <div className="flex items-center mb-4">
                   <Brain className="text-cyan-600 mr-3" size={24} />
                   <h4 className="font-bold text-gray-900">Skill Extraction</h4>
@@ -72,7 +72,7 @@ const MethodologySection = () => {
               </div>
             </div>
 
-            <div className="bg-cyan-50 p-6 rounded-xl border-l-4 border-cyan-500">
+            <div className="bg-cyan-50 p-6 rounded-lg border-l-4 border-cyan-500">
               <h4 className="font-bold text-gray-900 mb-3">Matching Algorithm</h4>
               <p className="text-gray-700 text-sm">
                 The system employs cosine similarity and semantic analysis to match candidate profiles 
@@ -96,7 +96,7 @@ const MethodologySection = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 text-center">
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 text-center">
                 <div className="bg-green-100 text-green-600 rounded-lg p-3 inline-flex mb-4">
                   <Target size={24} />
                 </div>
@@ -106,7 +106,7 @@ const MethodologySection = () => {
                 </p>
               </div>
               
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 text-center">
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 text-center">
                 <div className="bg-purple-100 text-purple-600 rounded-lg p-3 inline-flex mb-4">
                   <Cpu size={24} />
                 </div>
@@ -116,7 +116,7 @@ const MethodologySection = () => {
                 </p>
               </div>
               
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 text-center">
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 text-center">
                 <div className="bg-orange-100 text-orange-600 rounded-lg p-3 inline-flex mb-4">
                   <Database size={24} />
                 </div>
@@ -185,7 +185,7 @@ const MethodologySection = () => {
               </p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
+            <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
               <h4 className="font-bold text-gray-900 mb-4">Matching Factors</h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
@@ -209,7 +209,7 @@ const MethodologySection = () => {
               </div>
             </div>
 
-            <div className="bg-cyan-600 text-white p-6 rounded-xl mt-8">
+            <div className="bg-cyan-600 text-white p-6 rounded-lg mt-8">
               <h4 className="font-bold text-xl mb-3">Expected Outcomes</h4>
               <p className="text-cyan-100">
                 The integrated methodology is designed to reduce hiring time by 60%, improve candidate 

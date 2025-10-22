@@ -1,12 +1,12 @@
 import Navigation from '@/components/public/Navigation';
 import Footer from '@/components/public/Footer';
-import MethodologySection from '@/components/methodology/MethodologySection';
+import DocumentsSection from '@/components/documents/DocumentsSection';
 
-export default function Methodology() {
+export default function Documents() {
   return (
     <main className="min-h-screen bg-white">
       <Navigation />
-      <MethodologySection />
+      <DocumentsSection />
       <Footer />
     </main>
   );

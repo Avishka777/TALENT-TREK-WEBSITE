@@ -41,13 +41,13 @@ const HeroSection = () => {
           <div className="flex flex-wrap gap-6 justify-center mt-12">
             <a
               href="#research"
-              className="bg-cyan-600 hover:bg-cyan-700 text-white px-10 py-4 rounded-xl transition-all duration-300 flex items-center font-semibold text-lg shadow-2xl hover:shadow-3xl transform hover:scale-105"
+              className="bg-cyan-600 hover:bg-cyan-700 text-white px-10 py-4 rounded-lg transition-all duration-300 flex items-center font-semibold text-lg shadow-2xl hover:shadow-3xl transform hover:scale-105"
             >
               Explore Research <ArrowRight size={22} className="ml-3" />
             </a>
             <a
               href="#team"
-              className="bg-white text-gray-900 hover:bg-gray-100 px-10 py-4 rounded-xl transition-all duration-300 font-semibold text-lg border-2 border-white shadow-2xl hover:shadow-3xl transform hover:scale-105"
+              className="bg-white text-gray-900 hover:bg-gray-100 px-10 py-4 rounded-lg transition-all duration-300 font-semibold text-lg border-2 border-white shadow-2xl hover:shadow-3xl transform hover:scale-105"
             >
               Meet Our Team
             </a>
@@ -57,8 +57,8 @@ const HeroSection = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-8 h-12 border-3 border-white rounded-full flex justify-center">
-          <div className="w-1.5 h-4 bg-white rounded-full mt-3"></div>
+        <div className="w-8 h-12 border-3 border-white rounded-lg flex justify-center">
+          <div className="w-1.5 h-4 bg-white rounded-lg mt-3"></div>
         </div>
       </div>
     </section>

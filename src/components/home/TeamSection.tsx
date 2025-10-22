@@ -57,7 +57,7 @@ const TeamSection = () => {
       <div className="container mx-auto px-4 md:px-6  max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Research Team</h2>
-          <div className="h-1.5 w-32 bg-cyan-600 mx-auto rounded-full mb-6"></div>
+          <div className="h-1.5 w-32 bg-cyan-600 mx-auto rounded-lg mb-6"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Meet the dedicated team behind the TALENT TREK research project
           </p>
@@ -73,7 +73,7 @@ const TeamSection = () => {
             {teamMembers.slice(0, 2).map((supervisor, index) => (
               <div
                 key={index}
-                className="bg-gray-50 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-200"
+                className="bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-200"
               >
                 <div className="p-8 text-center">
                   <div className="w-52 h-52 mx-auto mb-6 rounded-lg overflow-hidden border-4 border-white shadow-md">
@@ -102,7 +102,7 @@ const TeamSection = () => {
             {teamMembers.slice(2).map((member, index) => (
               <div
                 key={index}
-                className="bg-gray-50 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-200 group"
+                className="bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-200 group"
               >
                 <div className="p-6 text-center">
                   <div className="w-48 h-48 mx-auto mb-4 rounded-lg overflow-hidden border-4 border-white shadow-md group-hover:border-cyan-200 transition-colors">
@@ -126,7 +126,7 @@ const TeamSection = () => {
         </div>
 
         {/* Combined System Info */}
-        <div className="mt-16 bg-cyan-600 text-white p-8 rounded-2xl shadow-xl">
+        <div className="mt-16 bg-cyan-600 text-white p-8 rounded-lg shadow-xl">
           <div className="text-center max-w-4xl mx-auto">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">Integrated Research Framework</h3>
             <p className="text-lg text-cyan-100 leading-relaxed">

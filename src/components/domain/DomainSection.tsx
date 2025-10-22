@@ -57,7 +57,7 @@ const DomainSection = () => {
           {/* Research Gap */}
           <SectionTitle title="Research Gap" className="mt-12" />
           
-          <div className="bg-cyan-50 p-8 rounded-2xl border-l-4 border-cyan-500 mb-12 shadow-sm">
+          <div className="bg-cyan-50 p-8 rounded-lg border-l-4 border-cyan-500 mb-12 shadow-sm">
             <p className="text-gray-800 text-lg leading-relaxed">
               Through comprehensive analysis of existing literature and industry practices, we identified 
               significant gaps in current recruitment technologies. Most solutions address isolated aspects 
@@ -80,7 +80,7 @@ const DomainSection = () => {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-              <div className="bg-red-50 p-6 rounded-xl border-l-4 border-red-500">
+              <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
                 <h4 className="font-bold text-gray-800 mb-3">Job Seeker Challenges</h4>
                 <ul className="text-gray-700 space-y-2 text-sm">
                   <li>• Difficulty finding roles matching specific skill sets</li>
@@ -90,7 +90,7 @@ const DomainSection = () => {
                 </ul>
               </div>
               
-              <div className="bg-cyan-50 p-6 rounded-xl border-l-4 border-cyan-500">
+              <div className="bg-cyan-50 p-6 rounded-lg border-l-4 border-cyan-500">
                 <h4 className="font-bold text-gray-800 mb-3">Recruiter Challenges</h4>
                 <ul className="text-gray-700 space-y-2 text-sm">
                   <li>• Time-consuming resume screening</li>
@@ -113,7 +113,7 @@ const DomainSection = () => {
           <SectionTitle title="Research Objectives" className="mt-12" />
           
           <div className="prose prose-lg max-w-none text-gray-700">
-            <div className="bg-gray-50 p-8 rounded-2xl mb-8 border border-gray-200">
+            <div className="bg-gray-50 p-8 rounded-lg mb-8 border border-gray-200">
               <h4 className="text-xl font-bold text-gray-900 mb-4 text-center">Main Objective</h4>
               <p className="text-lg text-center text-gray-700">
                 Develop a Computational Framework for Optimized Recruitment via Algorithmic 
@@ -124,7 +124,7 @@ const DomainSection = () => {
             <h4 className="font-bold text-gray-900 mb-4">Specific Objectives:</h4>
             <div className="space-y-4">
               <div className="flex items-start">
-                <div className="bg-cyan-100 text-cyan-600 rounded-lg p-3 mr-4 flex-shrink-0">
+                <div className="bg-cyan-100 text-cyan-600 rounded-lg p-3 mr-4">
                   <span className="font-bold">01</span>
                 </div>
                 <div>
@@ -137,7 +137,7 @@ const DomainSection = () => {
               </div>
               
               <div className="flex items-start">
-                <div className="bg-cyan-100 text-cyan-600 rounded-lg p-3 mr-4 flex-shrink-0">
+                <div className="bg-cyan-100 text-cyan-600 rounded-lg p-3 mr-4">
                   <span className="font-bold">02</span>
                 </div>
                 <div>
@@ -150,7 +150,7 @@ const DomainSection = () => {
               </div>
               
               <div className="flex items-start">
-                <div className="bg-cyan-100 text-cyan-600 rounded-lg p-3 mr-4 flex-shrink-0">
+                <div className="bg-cyan-100 text-cyan-600 rounded-lg p-3 mr-4">
                   <span className="font-bold">03</span>
                 </div>
                 <div>
@@ -163,7 +163,7 @@ const DomainSection = () => {
               </div>
               
               <div className="flex items-start">
-                <div className="bg-cyan-100 text-cyan-600 rounded-lg p-3 mr-4 flex-shrink-0">
+                <div className="bg-cyan-100 text-cyan-600 rounded-lg p-3 mr-4">
                   <span className="font-bold">04</span>
                 </div>
                 <div>

@@ -4,7 +4,7 @@ import DomainSection from '@/components/domain/DomainSection';
 
 export default function Domain() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-white">
       <Navigation />
       <DomainSection />
       <Footer />
