@@ -2,7 +2,7 @@ import { Mail, Award, Users } from 'lucide-react';
 import avishka from '../../assets/team/avishka.png';
 import dhananjaya from '../../assets/team/dhananjaya.png';
 import pasan from '../../assets/team/pasan.png';
-import dimesha from '../../assets/team/dimesha2.jpg';
+import dimesha from '../../assets/team/dimesha.png';
 import user from '../../assets/team/user.png';
 import Image from 'next/image';
 
@@ -23,31 +23,31 @@ const teamMembers = [
   },
   {
     name: 'WIJERATHNA G.D.K',
-    role: 'AI Agent Developer',
+    role: 'Team Leader',
     photo: dimesha,
-    function: 'AI-Agent for Smart Job Search and Automation',
-    email: 'gdkw@email.com'
+    function: 'AI-Driven, Skill-Based Assessment Framework for Technical Evaluation',
+    email: 'it21833366@my.sliit.lk'
   },
   {
     name: 'RATHNAKUMARA A.R.S.A',
-    role: 'Platform Architect',
+    role: 'Team Member',
     photo: avishka,
     function: 'AI-Driven Platform for Recruitment and Job Alignment',
     email: 'it2183816@my.sliit.lk'
   },
   {
     name: 'ABEYSINGHA A.D.L',
-    role: 'Assessment Specialist',
+    role: 'Team Member',
     photo: dhananjaya,
-    function: 'AI-Driven, Skill-Based Assessment Framework for Technical Evaluation',
-    email: 'adla@email.com'
+    function: 'AI-Agent for Smart Job Search and Automation',
+    email: 'it21834806@my.sliit.lk'
   },
   {
     name: 'FERNANDO T.P.R',
-    role: 'Interview System Engineer',
+    role: 'Team Member',
     photo: pasan,
     function: 'Automated System for Interviews',
-    email: 'tprf@email.com'
+    email: 'it21835278@my.sliit.lk'
   }
 ];
 
