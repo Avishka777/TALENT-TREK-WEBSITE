@@ -56,7 +56,7 @@ const DocumentsSection = () => {
       category: "report",
       date: "May 26, 2025",
       fileSize: "5.5 MB",
-      downloadUrl: "#",
+      downloadUrl: "https://drive.google.com/file/d/1DMl2rNzvgtt1e9voQFv3DnZ9bOoY6Q3E/view?usp=sharing",
       status: "draft",
     },
     {
@@ -65,7 +65,7 @@ const DocumentsSection = () => {
       category: "report",
       date: "May 26, 2025",
       fileSize: "5.5 MB",
-      downloadUrl: "#",
+      downloadUrl: "https://drive.google.com/file/d/1GEWR-wF___KKyuzyTiZTUYz3CZraIo1Q/view?usp=sharing",
       status: "draft",
     },
     {
@@ -74,7 +74,7 @@ const DocumentsSection = () => {
       category: "report",
       date: "May 26, 2025",
       fileSize: "5.5 MB",
-      downloadUrl: "#",
+      downloadUrl: "https://drive.google.com/file/d/1iUoqa05OUvVfiSBvsEWJr17YRCORXTHi/view?usp=sharing",
       status: "draft",
     },
     {
@@ -83,7 +83,7 @@ const DocumentsSection = () => {
       category: "report",
       date: "May 26, 2025",
       fileSize: "5.5 MB",
-      downloadUrl: "#",
+      downloadUrl: "https://drive.google.com/file/d/1rXMuTWXC2RkI0aW958CbBXHawGKbn2IC/view?usp=sharing",
       status: "draft",
     },
     {
@@ -92,7 +92,7 @@ const DocumentsSection = () => {
       category: "report",
       date: "May 26, 2025",
       fileSize: "5.5 MB",
-      downloadUrl: "#",
+      downloadUrl: "https://drive.google.com/file/d/1keTR07Am5rQ8qxnpOkSkmcRsVQZuXEIC/view?usp=sharing",
       status: "draft",
     },
     {
@@ -121,6 +121,33 @@ const DocumentsSection = () => {
       fileSize: "5.5 MB",
       downloadUrl: "#",
       status: "pending",
+    },
+    {
+      id: "doc11",
+      title: "Proposal Presantation",
+      category: "presentation",
+      date: "May 26, 2025",
+      fileSize: "5.5 MB",
+      downloadUrl: "https://docs.google.com/presentation/d/1KdwxclhvNBfJGAfE_ZuNOWsss7yaHvu1/edit?usp=sharing&ouid=105366346477729486057&rtpof=true&sd=true",
+      status: "completed",
+    },
+    {
+      id: "doc12",
+      title: "Progress Presentation 01",
+      category: "presentation",
+      date: "May 26, 2025",
+      fileSize: "5.5 MB",
+      downloadUrl: "https://docs.google.com/presentation/d/1DFgvYVqdIb5WUzrT6e-7HFwI6o_cF8c9/edit?usp=sharing&ouid=105366346477729486057&rtpof=true&sd=true",
+      status: "completed",
+    },
+    {
+      id: "doc13",
+      title: "Progress Presentation 02",
+      category: "presentation",
+      date: "May 26, 2025",
+      fileSize: "5.5 MB",
+      downloadUrl: "https://docs.google.com/presentation/d/1LRluGfqSQZF-aHyjSyUsmju7b-CUd1VP/edit?usp=sharing&ouid=105366346477729486057&rtpof=true&sd=true",
+      status: "completed",
     },
   ];
 
@@ -270,15 +297,16 @@ const DocumentsSection = () => {
                     <span className="text-sm text-gray-600">
                       {document.fileSize}
                     </span>
-                    <button
-                      onClick={() =>
-                        console.log(`Downloading ${document.title}`)
-                      }
-                      className="cursor-pointer inline-flex items-center text-cyan-600 hover:text-cyan-800 font-medium text-sm transition-colors"
+                    <a
+                      href={document.downloadUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      download={document.filename || true}
+                      className="inline-flex items-center text-cyan-600 hover:text-cyan-800 font-medium text-sm transition-colors"
                     >
                       <Download size={16} className="mr-1" />
                       Download
-                    </button>
+                    </a>
                   </div>
                 </div>
 
