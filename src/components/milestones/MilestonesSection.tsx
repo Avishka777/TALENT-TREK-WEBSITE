@@ -42,7 +42,7 @@ const MilestonesSection = () => {
       title: "Project Proposal",
       date: "July 5-9, 2024",
       status: "completed",
-      marks: "85/100",
+      // marks: "85/100",
       description: "Initial project proposal outlining the research problem, objectives, and methodology. This milestone established the foundation for the TALENT TREK project and received approval from the academic board.",
       icon: FileText
     },
@@ -51,7 +51,7 @@ const MilestonesSection = () => {
       title: "Progress Presentation 1",
       date: "December 4-6, 2024",
       status: "completed",
-      marks: "78/100",
+      // marks: "78/100",
       description: "First progress review covering literature survey, research gap identification, and preliminary system design. The team presented initial findings and received feedback on the proposed technical approach.",
       icon: Target
     },
@@ -59,7 +59,7 @@ const MilestonesSection = () => {
       id: "progress2",
       title: "Progress Presentation 2",
       date: "March 18-20, 2025",
-      status: "in-progress",
+      status: "completed",
       description: "Second progress review focusing on prototype development, data collection methodology, and initial testing results. This milestone will demonstrate the feasibility of the proposed AI-powered recruitment solutions.",
       icon: Users
     },
@@ -115,12 +115,11 @@ const MilestonesSection = () => {
           />
 
           {/* Timeline Visualization */}
-          <div className="mb-12 bg-cyan-50 p-8 rounded-lg border border-cyan-100">
+          {/* <div className="mb-12 bg-cyan-50 p-8 rounded-lg border border-cyan-100">
             <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Project Timeline</h3>
             <div className="flex items-center justify-between relative">
-              {/* Timeline Line */}
               <div className="absolute top-1/2 left-0 right-0 h-1 bg-gray-200 transform -translate-y-1/2"></div>
-              
+
               {milestones.map((milestone, index) => (
                 <div key={milestone.id} className="flex flex-col items-center relative z-10">
                   <div className={`w-4 h-4 rounded-lg border-4 border-white ${getTimelineClass(index, milestone.status)}`}></div>
@@ -130,7 +129,7 @@ const MilestonesSection = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
 
           {/* Milestones Accordion */}
           <div className="space-y-4">
@@ -139,24 +138,21 @@ const MilestonesSection = () => {
               return (
                 <div
                   key={milestone.id}
-                  className={`border-2 rounded-lg overflow-hidden transition-all duration-300 ${
-                    openMilestone === milestone.id 
-                      ? "border-cyan-300 shadow-lg" 
-                      : "border-gray-200 shadow-sm hover:shadow-md"
-                  }`}
+                  className={`border-2 rounded-lg overflow-hidden transition-all duration-300 ${openMilestone === milestone.id
+                    ? "border-cyan-300 shadow-lg"
+                    : "border-gray-200 shadow-sm hover:shadow-md"
+                    }`}
                 >
                   <div
-                    className={`p-6 cursor-pointer flex items-center justify-between transition-colors duration-300 ${
-                      openMilestone === milestone.id ? "bg-cyan-50" : "bg-white hover:bg-gray-50"
-                    }`}
+                    className={`p-6 cursor-pointer flex items-center justify-between transition-colors duration-300 ${openMilestone === milestone.id ? "bg-cyan-50" : "bg-white hover:bg-gray-50"
+                      }`}
                     onClick={() => toggleMilestone(milestone.id)}
                   >
                     <div className="flex items-center space-x-4">
-                      <div className={`p-3 rounded-lg ${
-                        milestone.status === 'completed' ? 'bg-green-100 text-green-600' :
+                      <div className={`p-3 rounded-lg ${milestone.status === 'completed' ? 'bg-green-100 text-green-600' :
                         milestone.status === 'in-progress' ? 'bg-amber-100 text-amber-600' :
-                        'bg-gray-100 text-gray-400'
-                      }`}>
+                          'bg-gray-100 text-gray-400'
+                        }`}>
                         <IconComponent size={24} />
                       </div>
                       <div>
