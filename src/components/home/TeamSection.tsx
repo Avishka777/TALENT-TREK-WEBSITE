@@ -4,6 +4,7 @@ import dhananjaya from '../../assets/team/dhananjaya.png';
 import supervisor from '../../assets/team/supervisor.png';
 import pasan from '../../assets/team/pasan.png';
 import dimesha from '../../assets/team/dimesha.png';
+import co from '../../assets/team/co.png';
 import user from '../../assets/team/user.png';
 import Image from 'next/image';
 
@@ -19,7 +20,7 @@ const teamMembers = [
   {
     name: 'MS. KAUSHALYA RAJAPAKSE',
     role: 'Co-Supervisor',
-    photo: user,
+    photo: co,
     description: 'Co-Supervisor providing technical guidance and industry insights'
   },
   {
