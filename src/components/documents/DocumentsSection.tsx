@@ -149,6 +149,15 @@ const DocumentsSection = () => {
       downloadUrl: "https://docs.google.com/presentation/d/1LRluGfqSQZF-aHyjSyUsmju7b-CUd1VP/edit?usp=sharing&ouid=105366346477729486057&rtpof=true&sd=true",
       status: "completed",
     },
+    {
+      id: "doc14",
+      title: "Final Presentation",
+      category: "presentation",
+      date: "May 26, 2025",
+      fileSize: "5.5 MB",
+      downloadUrl: "https://docs.google.com/presentation/d/1LRluGfqSQZF-aHyjSyUsmju7b-CUd1VP/edit?usp=sharing&ouid=105366346477729486057&rtpof=true&sd=true",
+      status: "completed",
+    },
   ];
 
   const filteredDocuments = documents.filter((doc) => {
