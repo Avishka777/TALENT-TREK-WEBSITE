@@ -1,6 +1,7 @@
 import { Mail, Award, Users } from 'lucide-react';
 import avishka from '../../assets/team/avishka.png';
 import dhananjaya from '../../assets/team/dhananjaya.png';
+import supervisor from '../../assets/team/supervisor.png';
 import pasan from '../../assets/team/pasan.png';
 import dimesha from '../../assets/team/dimesha.png';
 import user from '../../assets/team/user.png';
@@ -12,7 +13,7 @@ const teamMembers = [
   {
     name: 'DR. PRASANNA SUMATHIPALA',
     role: 'Supervisor',
-    photo: user,
+    photo: supervisor,
     description: 'Research Supervisor guiding the project development and academic direction'
   },
   {
