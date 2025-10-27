@@ -19,7 +19,7 @@ const ObjectivesSection = () => {
     },
     {
       icon: FileSearch,
-      title: "AI-Agent for Smart Job Search",
+      title: "AI-Agent for Smart Job Search and Automation",
       description: "Design and implement an AI Skill Forecaster Analyzes IT job postings to predict the top 5 most in-demand skills for the next 6 months."
     },
 
