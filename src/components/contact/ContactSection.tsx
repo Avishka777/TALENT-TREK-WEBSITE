@@ -106,11 +106,15 @@ const ContactSection = () => {
                                     <h2 className="text-2xl font-bold text-gray-900">Send us a Message</h2>
                                 </div>
 
-                                <form onSubmit={handleSubmit} className="space-y-6">
+                                <form
+                                    action="https://api.web3forms.com/submit"
+                                    method="POST"
+                                    className="space-y-6">
+                                    {/* Hidden access key */}
                                     <input
                                         type="hidden"
                                         name="access_key"
-                                        value=""
+                                        value="dcb77939-ab82-43fe-832c-9a9effb83e94"
                                     />
 
                                     {/* Name and Email Row */}
