@@ -4,8 +4,9 @@ import logo from '../../assets/public/logo.png';
 const Footer = () => {
     const resources = [
         { name: 'Documents', href: '/documents' },
-        { name: 'Milestones', href: '/milestones' },
+        // { name: 'Milestones', href: '/milestones' },
         { name: 'Methodolgy', href: '/methodology' },
+        { name: 'About Us', href: '/aboutus' },
         { name: 'Contact', href: '/contact' },
     ];
 
