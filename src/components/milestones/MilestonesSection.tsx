@@ -40,7 +40,7 @@ const MilestonesSection = () => {
     {
       id: "proposal",
       title: "Project Proposal",
-      date: "July 5-9, 2024",
+      date: "January 27, 2025",
       status: "completed",
       // marks: "85/100",
       description: "Initial project proposal outlining the research problem, objectives, and methodology. This milestone established the foundation for the TALENT TREK project and received approval from the academic board.",
@@ -49,7 +49,7 @@ const MilestonesSection = () => {
     {
       id: "progress1",
       title: "Progress Presentation 1",
-      date: "December 4-6, 2024",
+      date: "April 08, 2025",
       status: "completed",
       // marks: "78/100",
       description: "First progress review covering literature survey, research gap identification, and preliminary system design. The team presented initial findings and received feedback on the proposed technical approach.",
@@ -58,7 +58,7 @@ const MilestonesSection = () => {
     {
       id: "progress2",
       title: "Progress Presentation 2",
-      date: "March 18-20, 2025",
+      date: "September 15, 2025",
       status: "completed",
       description: "Second progress review focusing on prototype development, data collection methodology, and initial testing results. This milestone will demonstrate the feasibility of the proposed AI-powered recruitment solutions.",
       icon: Users
@@ -66,19 +66,19 @@ const MilestonesSection = () => {
     {
       id: "final",
       title: "Final Assessment",
-      date: "May 26-28, 2025",
+      date: "October 28, 2025",
       status: "upcoming",
       description: "Final project submission including complete implementation, testing results, and comprehensive documentation. This milestone represents the culmination of the research effort and system validation.",
       icon: Award
     },
-    {
-      id: "viva",
-      title: "Viva Voce",
-      date: "June 2025",
-      status: "upcoming",
-      description: "Final oral defense of the research project in front of an academic committee. The team will present findings, demonstrate the system, and answer questions about the research methodology and results.",
-      icon: Users
-    },
+    // {
+    //   id: "viva",
+    //   title: "Viva Voce",
+    //   date: "June 2025",
+    //   status: "upcoming",
+    //   description: "Final oral defense of the research project in front of an academic committee. The team will present findings, demonstrate the system, and answer questions about the research methodology and results.",
+    //   icon: Users
+    // },
   ];
 
   const getStatusClass = (status: string) => {
