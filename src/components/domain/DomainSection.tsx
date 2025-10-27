@@ -89,24 +89,24 @@ const TechnologyStack = () => {
     }
   ];
 
-  const getIconComponent = (IconComponent, color) => (
-    <div className={`p-3 rounded-xl bg-gradient-to-r ${color} text-white shadow-lg`}>
+  const getIconComponent = (IconComponent: React.ComponentType<any>, color: string) => (
+    <div className={`p-3 rounded-xl ${color} text-white shadow-lg`}>
       <IconComponent size={24} />
     </div>
   );
 
   return (
-    <section className="py-16 bg-gradient-to-br from-gray-50 to-gray-100">
+    <section className="py-16  from-gray-50 to-gray-100">
       <div className="container mx-auto px-4 md:px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-cyan-600 to-cyan-700 rounded-full mb-6">
+          <div className="inline-flex items-center justify-center w-16 h-16  from-cyan-600 to-cyan-700 rounded-full mb-6">
             <Code className="text-white" size={28} />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Technology Stack
           </h2>
-          <div className="h-1.5 w-32 bg-gradient-to-r from-cyan-600 to-cyan-500 mx-auto rounded-lg mb-6"></div>
+          <div className="h-1.5 w-32  from-cyan-600 to-cyan-500 mx-auto rounded-lg mb-6"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Comprehensive technology ecosystem powering our AI-driven recruitment platform
           </p>
@@ -120,7 +120,7 @@ const TechnologyStack = () => {
               className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 overflow-hidden"
             >
               {/* Header */}
-              <div className={`bg-gradient-to-r ${tech.color} p-6 text-white`}>
+              <div className={` ${tech.color} p-6 text-white`}>
                 <div className="flex items-start justify-between">
                   <div className="flex-1">
                     <div className="flex items-center mb-3">
@@ -140,7 +140,7 @@ const TechnologyStack = () => {
                   {tech.techGroups.map((group, groupIndex) => (
                     <div key={groupIndex}>
                       <h4 className="font-semibold text-gray-900 mb-3 flex items-center">
-                        <div className={`w-2 h-2 bg-gradient-to-r ${tech.color} rounded-full mr-3`}></div>
+                        <div className={`w-2 h-2  ${tech.color} rounded-full mr-3`}></div>
                         {group.category}
                       </h4>
                       <div className="flex flex-wrap gap-2">
@@ -195,7 +195,7 @@ const TechnologyStack = () => {
         </div>
 
         {/* Technology Categories Overview */}
-        <div className="mt-12 bg-gradient-to-r from-cyan-600 to-cyan-700 rounded-2xl p-8 text-white">
+        <div className="mt-12  from-cyan-600 to-cyan-700 rounded-2xl p-8 text-white">
           <h3 className="text-2xl font-bold mb-6 text-center">Technology Architecture</h3>
           <div className="grid md:grid-cols-4 gap-6">
             {[
@@ -225,7 +225,7 @@ const TechnologyStack = () => {
               }
             ].map((category, index) => (
               <div key={index} className="text-center">
-                <div className={`inline-flex p-4 rounded-xl bg-gradient-to-r ${category.color} mb-4`}>
+                <div className={`inline-flex p-4 rounded-xl  ${category.color} mb-4`}>
                   <category.icon size={24} />
                 </div>
                 <h4 className="font-semibold mb-2">{category.title}</h4>
@@ -254,13 +254,13 @@ const DomainSection = () => {
 
           {/* Introduction Section */}
           <div className="text-center mb-16">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-cyan-600 to-cyan-700 rounded-full mb-6">
+            <div className="inline-flex items-center justify-center w-16 h-16  from-cyan-600 to-cyan-700 rounded-full mb-6">
               <Lightbulb className="text-white" size={28} />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Research Domain & Methodology
             </h1>
-            <div className="h-1.5 w-32 bg-gradient-to-r from-cyan-600 to-cyan-500 mx-auto rounded-lg mb-6"></div>
+            <div className="h-1.5 w-32  from-cyan-600 to-cyan-500 mx-auto rounded-lg mb-6"></div>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Exploring the intersection of Artificial Intelligence, Machine Learning, and Human Resources
               to revolutionize talent acquisition through computational optimization and algorithmic profiling.
@@ -355,7 +355,7 @@ const DomainSection = () => {
               <section className="bg-white rounded-2xl shadow-lg p-8">
                 <SectionTitle title="Research Objectives" />
 
-                <div className="bg-gradient-to-r from-cyan-600 to-cyan-700 text-white p-6 rounded-lg mb-8">
+                <div className=" from-cyan-600 to-cyan-700 text-white p-6 rounded-lg mb-8">
                   <h4 className="text-xl font-bold mb-3 text-center">Main Objective</h4>
                   <p className="text-center text-cyan-100">
                     Develop a Computational Framework for Optimized Recruitment via Algorithmic
@@ -444,15 +444,15 @@ const DomainSection = () => {
                   Methodology
                 </h3>
                 <div className="space-y-4">
-                  <div className="bg-gradient-to-r from-cyan-50 to-cyan-100 p-4 rounded-lg">
+                  <div className=" from-cyan-50 to-cyan-100 p-4 rounded-lg">
                     <h4 className="font-semibold text-cyan-800 text-sm mb-2">AI-Powered Analysis</h4>
                     <p className="text-cyan-700 text-xs">Advanced NLP and ML algorithms for comprehensive candidate evaluation</p>
                   </div>
-                  <div className="bg-gradient-to-r from-purple-50 to-purple-100 p-4 rounded-lg">
+                  <div className=" from-purple-50 to-purple-100 p-4 rounded-lg">
                     <h4 className="font-semibold text-purple-800 text-sm mb-2">Multi-Modal Assessment</h4>
                     <p className="text-purple-700 text-xs">Combining resume analysis, skill tests, and video interviews</p>
                   </div>
-                  <div className="bg-gradient-to-r from-green-50 to-green-100 p-4 rounded-lg">
+                  <div className=" from-green-50 to-green-100 p-4 rounded-lg">
                     <h4 className="font-semibold text-green-800 text-sm mb-2">Real-time Matching</h4>
                     <p className="text-green-700 text-xs">Dynamic algorithm for optimal candidate-job alignment</p>
                   </div>
@@ -478,7 +478,7 @@ const DomainSection = () => {
               </div>
 
               {/* Expected Outcomes */}
-              <div className="bg-gradient-to-br from-cyan-600 to-cyan-700 rounded-2xl p-6 text-white">
+              <div className=" from-cyan-600 to-cyan-700 rounded-2xl p-6 text-white">
                 <h3 className="text-xl font-bold mb-4">Expected Outcomes</h3>
                 <div className="space-y-4">
                   <div className="bg-white/20 backdrop-blur-sm p-4 rounded-lg">
