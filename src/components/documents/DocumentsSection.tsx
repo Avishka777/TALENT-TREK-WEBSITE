@@ -101,7 +101,7 @@ const DocumentsSection = () => {
       category: "checklist",
       date: "May 26, 2025",
       fileSize: "5.5 MB",
-      downloadUrl: "#",
+      downloadUrl: "https://github.com/Avishka777/TALENT-TREK-R25-018.git",
       status: "pending",
     },
     {
