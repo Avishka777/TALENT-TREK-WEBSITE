@@ -132,7 +132,7 @@ const TechnologyStack = () => {
 
   return (
     <section className="py-16 bg-linear-to-br from-gray-50 to-gray-100">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6 max-w-7xl">
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-linear-to-r from-cyan-600 to-cyan-700 rounded-full mb-6">
