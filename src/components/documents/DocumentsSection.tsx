@@ -101,7 +101,7 @@ const DocumentsSection = () => {
       category: "checklist",
       date: "May 26, 2025",
       fileSize: "5.5 MB",
-      downloadUrl: "#",
+      downloadUrl: "https://github.com/Avishka777/TALENT-TREK-R25-018.git",
       status: "pending",
     },
     {
@@ -110,7 +110,7 @@ const DocumentsSection = () => {
       category: "checklist",
       date: "May 26, 2025",
       fileSize: "5.5 MB",
-      downloadUrl: "#",
+      downloadUrl: "https://drive.google.com/file/d/1r7qqIeq927fwwu-eFPB8XHujnKvgFJTL/view?usp=sharing",
       status: "pending",
     },
     {

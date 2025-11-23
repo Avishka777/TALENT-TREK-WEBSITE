@@ -7,7 +7,7 @@
 **Computational Framework for Optimized Recruitment via Algorithmal Skill Profiling**
 
 ## 🚀 Live Demo
-View Live Website [Note: Update with your actual deployment URL]
+View Live Website: [https://web-talent-trek.netlify.app/](https://web-talent-trek.netlify.app/)
 
 ## 🛠 Tech Stack
 - **Framework:** Next.js 15 with App Router  
